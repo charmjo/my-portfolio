@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name": "PHP",
+        "image": ""
+    },
+    {
+        "id":2,
+        "name": "Laravel",
+        "image": ""
+    },
+    {
+        "id":3,
+        "name": "Javascript",
+        "image": ""
+    },
+    {
+        "id":4,
+        "name": "React",
+        "image": ""
+    },
+    {
+        "id":5,
+        "name": "Swift",
+        "image": ""
+    },
+    {
+        "id":6,
+        "name": "C#",
+        "image": ""
+    }
+]
