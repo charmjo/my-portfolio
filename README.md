@@ -6,3 +6,6 @@
         - open localhost:80 or whatever
     - Check if the ports are correctly configured in the docker-compose.yaml file 
 
+2. Cannot connect to mysql database
+    - DO NOT SET UP WORDPRESS until confirmed!
+

@@ -4,7 +4,7 @@ import my_picture from "../../../assets/my_picture.jpg"
 // Source : https://tailwindcomponents.com/component/about-me
 function AboutMeSection () {
     return (
-        <section class="mb-32 bg-azalea-950">
+        <section class=" bg-azalea-950">
             <div class="container min-w-full">
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="flex p-3 justify-center items-center">

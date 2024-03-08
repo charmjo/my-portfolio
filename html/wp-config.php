@@ -75,19 +75,15 @@ define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         'd687b1415acd77a2822eb8b8212f9e6f6c91b0d5') );
-define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  '57ba8a1fe497f0972b61d3db0fd492c6f7f5c286') );
-define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    'cad9b29ed48dc02ad78f947ffe017b8ec9c72cd8') );
-define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '9f0ff929bbc2055be2da25cfd16fe60fdc92b167') );
-define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '8444d807972082f8315e25f2359e9c4a86ea38c3') );
-define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '761793824a4c15a8074fe6f5d58a2e0106a1aef1') );
-define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '0bbd1118f42a6313d54d864db0d90d6fd117db64') );
-define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'a1f4b3bd802e231f8e7e266adfdfc93c1cb333e8') );
+define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         'ed243988e1166edcce3255e86a613fa6e44966a5') );
+define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  '7bd1c80337b5ac64fbe778d4c22c62a95a2a88c0') );
+define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    '9f638d11e09755277005dfc43669cf3d9ecba96c') );
+define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '46dec7c8f23432cf9825f061c84007c5d50d4007') );
+define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        'ed8780e5efd08fb5b83367e67a2f0ef6369b6ae3') );
+define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '68158ffa84ceeedaa21df33d17e18295495db20e') );
+define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   'f9a7c44b3f35d8d7728c2aaeb736dbe21005c883') );
+define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       '8f807dd8da924129ae121a4f4f5ce0aa23383c0a') );
 // (See also https://wordpress.stackexchange.com/a/152905/199287)
-
-// CHARM - need to add secret key
-define('JWT_AUTH_SECRET_KEY', 'secret');
-define('JWT_AUTH_CORS_ENABLE', true);
 
 /**#@-*/
 
