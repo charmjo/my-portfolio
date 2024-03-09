@@ -1,39 +1,15 @@
 import { useState, useRef, useEffect } from "react";
 import * as viewSize from '../../constants';
-import projectList from '../../data/projects.json'
+import projectList from '../../data/projects.json';
+import ProjectCard from "./projectCard";
+import arrowLeft from "../../assets/reshot-icon-arrow-left.svg";
+import arrowRight from "../../assets/reshot-icon-arrow-right.svg";
 
 const Carousel= () => {
    // const { height, width } = useWindowDimensions();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [cardNum, setCardNum] = useState (2);
-    // const cards = [
-    //   {
-    //     image: 'https://source.unsplash.com/random',
-    //     title: 'Card 1',
-    //     description: 'Info which directs to the other page.',
-    //   },
-    //   {
-    //     image: 'https://source.unsplash.com/random',
-    //     title: 'Card 2',
-    //     description: 'Info which directs to the other page.',
-    //   },
-    //   {
-    //     image: 'https://source.unsplash.com/random',
-    //     title: 'Card 3',
-    //     description: 'Info which directs to the other page.',
-    //   },
-    //   {
-    //     image: 'https://source.unsplash.com/random',
-    //     title: 'Card 4',
-    //     description: 'Info which directs to the other page.',
-    //   },
-    //   {
-    //     image: 'https://source.unsplash.com/random',
-    //     title: 'Card 5',
-    //     description: 'Info which directs to the other page.',
-    //   },
-    // ];
-    
+ 
     const cards = projectList;
 
     function getWindowDimensions() {
@@ -50,16 +26,9 @@ const Carousel= () => {
    
 
         const screen_width = getWindowDimensions().width;
-        if (screen_width <= viewSize.WIDTH_MD) {
+        if (screen_width <= viewSize.WIDTH_SM) {
           setCardNum(1);
         } 
-        // else if (screen_width > viewSize.WIDTH_MD && screen_width <= viewSize.WIDTH_LG) {
-        //   setCardNum(2);
-        // }
-        // } else if (screen_width > viewSize.WIDTH_LG && screen_width <= viewSize.WIDTH_XL) {
-        //   setCardNum(3);
-        // } else {
-
         else {
           setCardNum(2);
         }
@@ -86,22 +55,22 @@ const Carousel= () => {
 
     // 
     return (
-      <div className="mt-2 p-5">
+      <div className="mt-2 py-5">
         <div className="w-full">
-          <div className="relative">
-            
-            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 justify-center">
+          <div className="relative items-center">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 justify-center z-0">
               {cards.slice(currentIndex, currentIndex + cardNum).map((card, index) => (
-                <div className="transition ease-out duration-300 flex-none w-full p-4 bg-white rounded-lg shadow-md" key={index}>
-                  <img className="w-full h-1/2 object-cover mb-4 rounded-lg" src={card.image} alt="Card" />
-                  <h3 className="text-lg font-bold">{card.name}</h3>
-                  <p className="text-gray-500">{card.description}</p>
-                </div>
+                <ProjectCard data={card}
+                      key={index} />
               ))}
             </div>
-            <div className="flex items-center justify-between mt-4 relative  bottom-44 ">
-              <button className="w-6 h-6 rounded-full bg-gray-300  relative right-4" onClick={handlePrev}>&lt;</button>
-              <button className="w-6 h-6 rounded-full bg-gray-300 relative left-10" onClick={handleNext}>&gt;</button>
+            <div className="flex justify-between">
+              <button className="absolute z-10 left-0 right-4 top-1/2" onClick={handlePrev}>
+                <img class="w-10" src={arrowLeft} alt="move left"/>
+              </button>
+              <button className="absolute z-10 rounded-full bg-gray-300 right-0 top-1/2" onClick={handleNext}>
+                <img class="w-10" src={arrowRight} alt="move right"/>
+              </button>
             </div>
           </div>
         </div>

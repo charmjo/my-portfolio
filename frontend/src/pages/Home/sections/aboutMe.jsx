@@ -27,7 +27,7 @@ function AboutMeSection () {
                         href="#"
                         class="block w-full rounded bg-rose-600 px-5 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-1/2 text-center my-3"
                         >
-                            Read More
+                            My Professional Journey
                         </a>
                     </div>
                 </div>
