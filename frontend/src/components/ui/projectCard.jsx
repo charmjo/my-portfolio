@@ -2,8 +2,8 @@ import githubLogo from '../../assets/github-mark-green.svg'
 
 const ProjectCard = (props) => {
     return (
-    <article className="flex-none w-full p-4 bg-white rounded-lg shadow-md h-500" key={props.key}>
-        <div className="contatiner">
+    <article className="flex-none w-full p-4 bg-white rounded-lg shadow-md" key={props.key}>
+        <div className="contatiner h-500">
             <img className="w-full h-1/2 object-cover mb-4 rounded-lg" src={props.data.image} alt="Card" /> 
             <h3 className="text-waiouru-900 text-lg font-bold">{props.data.name}</h3>
             <p className="mb-3 text-aqua-haze-600"><small> 
