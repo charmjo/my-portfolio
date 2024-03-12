@@ -5,14 +5,21 @@ import ProjectCard from "./projectCard";
 import arrowLeft from "../../assets/reshot-icon-arrow-left.svg";
 import arrowRight from "../../assets/reshot-icon-arrow-right.svg";
 
-const Carousel= () => {
+function Carousel () {
    // const { height, width } = useWindowDimensions();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [cardNum, setCardNum] = useState (2);
  
     const cards = projectList;
 
-    function getWindowDimensions() {
+    // I like to put my useffect on top
+    useEffect(() => {
+      // TO DO: TEST THIS VIEWPORT
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, [cardNum]);
+
+    const getWindowDimensions = () => {
       const { innerWidth: width, innerHeight: height } = window;
       return {
         width,
@@ -20,33 +27,26 @@ const Carousel= () => {
       };
     }
 
-    useEffect(() => {
-      // TO DO: TEST THIS VIEWPORT
-      function handleResize() {
-   
-
-        const screen_width = getWindowDimensions().width;
-        if (screen_width <= viewSize.WIDTH_SM) {
-          setCardNum(1);
-        } 
-        else {
-          setCardNum(2);
-        }
-       console.log(screen_width);
+    function handleResize () {
+      const screen_width = getWindowDimensions().width;
+      if (screen_width <= viewSize.WIDTH_SM) {
+        setCardNum(1);
+      } 
+      else {
+        setCardNum(2);
       }
+     console.log(screen_width);
+    }
   
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, [cardNum]);
-  
-    const handleNext = () => {
+    function handleNext () {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
     };
   
-    const handlePrev = () => {
+    function handlePrev () {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
     };
 
+    // will need to recheck this
     if(currentIndex>cards.length-cardNum) {
       console.log(currentIndex)
       setCurrentIndex(0)
