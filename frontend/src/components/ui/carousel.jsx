@@ -57,8 +57,8 @@ function Carousel () {
     return (
       <div className="mt-2 py-5">
         <div className="w-full">
-          <div className="relative items-center">
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 justify-center z-0">
+          <div className="relative items-center flex flex-column">
+            <div className="grid auto-rows-fr grid-cols-1 gap-5 sm:grid-cols-2 justify-center z-0">
               {cards.slice(currentIndex, currentIndex + cardNum).map((card, index) => (
                 <ProjectCard data={card}
                       key={index} />
