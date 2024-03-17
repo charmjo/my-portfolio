@@ -1,6 +1,6 @@
 function Footer () {
     return (
-        <footer className="bg-gradient-to-r from-waiouru-50 via-aqua-haze-200 to-waiouru-50">
+        <footer className="bottom-0 bg-gradient-to-r from-waiouru-50 via-aqua-haze-200 to-waiouru-50">
             <div className="text-center md:tex max-w-screen-xl px-4 py-10 md:py-16  mx-auto sm:px-6 lg:px-8">
                 <div className=" grid grid-cols-1 gap-8 lg:grid-cols-3 items-center">
                     <div className="">

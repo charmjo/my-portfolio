@@ -13,17 +13,15 @@ function App() {
 
 
   return (
-      <>
+      <div className="flex flex-col">
         <Navbar/>
-        <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
-        </div>
         <Footer />
-      </>
+      </div>
   );
 }
 
