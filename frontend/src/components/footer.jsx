@@ -1,7 +1,7 @@
 function Footer () {
     return (
-        <footer className="bottom-0 bg-gradient-to-r from-waiouru-50 via-aqua-haze-200 to-waiouru-50">
-            <div className="text-center md:tex max-w-screen-xl px-4 py-10 md:py-16  mx-auto sm:px-6 lg:px-8">
+        <footer className="mt-auto bg-gradient-to-r from-waiouru-50 via-aqua-haze-200 to-waiouru-50">
+            <div className="text-center text-maroon-oak-900  md:tex max-w-screen-xl px-4 py-10 mx-auto sm:px-6 lg:px-8">
                 <div className=" grid grid-cols-1 gap-8 lg:grid-cols-3 items-center">
                     <div className="">
                         {/* TODO: Change to home */}
@@ -20,7 +20,7 @@ function Footer () {
                             <p className="font-medium mt-4">
                                 Contact
                             </p>
-                            <nav className="text-gray-600 items-center sm:w-fit mt-2 sm:mx-auto">
+                            <nav className="text-azalea-900 items-center sm:w-fit mt-2 sm:mx-auto">
                                 <a className="hover:opacity-75" href="https://www.linkedin.com/in/charm-johannes-relator/" target="_blank" rel="noreferrer" aria-hidden="true">
                                     <span className="sr-only"> LinkedIn </span>
                                     <div className="flex flex-row justify-center sm:justify-start">
@@ -66,7 +66,7 @@ function Footer () {
                             <p className="font-medium mt-4">
                                 Pages
                             </p>
-                            <nav className="mt-2 flex flex-col md:text-start md:w-fit mx-auto text-gray-600">
+                            <nav className="text-azalea-900 mt-2 flex flex-col md:text-start md:w-fit mx-auto text-gray-600">
                                 <a className="hover:opacity-75" href> Home </a>
                                 <a className="hover:opacity-75 mt-1" href> About </a>
                                 <a className="hover:opacity-75 mt-1" href> Projects </a>

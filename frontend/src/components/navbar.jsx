@@ -1,9 +1,10 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 // TODO: TEST THE NAVBAR
+// TODO: Make the navbar responsive
 function Navbar () {
     return (
-        <nav className="text-xl bg-gradient-to-r from-aqua-haze-50 via-azalea-200 to-aqua-haze-50 flex justify-between items-stretch gap-8 px-4">
+        <nav className="text-maroon-oak-900 text-xl bg-gradient-to-r from-waiouru-50 via-aqua-haze-200 to-waiouru-50 flex justify-between items-stretch gap-8 px-20">
             <Link to="/" className="h-full font-sacramento font-medium text-4xl flex items-center p-1 mt-2">charm relator</Link>
             <ul className="flex gap-4 items-center">
                 <CustomLink to="/">Home</CustomLink>
@@ -11,7 +12,7 @@ function Navbar () {
                 <CustomLink to="/projects">Projects</CustomLink>
 
                    {/* hover:bg-azalea-200 TODO: this is for the Blog link:  */}
-                <CustomLink to="">Blog</CustomLink>
+                <CustomLink to="/blog">Blog</CustomLink>
             </ul>
         </nav>
     );
@@ -26,11 +27,10 @@ function CustomLink ({to, children, ...props}) {
 
 
     return (
-        <li className={`px-2 py-1 hover:bg-aqua-haze-200 ${isActive ? "bg-aqua-haze-200" : ""}`}>
-            <Link to={to} {...props}>
+        <li className={`px-2 py-1 hover:border-b-2 border-aqua-haze-700 ${isActive ? "border-b-2 text-aqua-haze-700" : ""}`}>
+            <Link className="hover:text-aqua-haze-700" to={to} {...props}>
                 {children}
             </Link>
-            <hr className={`hidden hover:block ${isActive ? "block bg-azalea-900" : ""}`}/>
         </li>
     );
 } 

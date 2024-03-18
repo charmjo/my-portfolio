@@ -1,6 +1,6 @@
 import UnderConstruction from "../../components/pages/under-construction";
 
-function About() {
+function Blog() {
     let Component; // create custom component
 
   
@@ -8,9 +8,9 @@ function About() {
 
     return (
         <>
-            <UnderConstruction pageTitle="About"/>
+            <UnderConstruction pageTitle="Blog"/>
         </>
     );
   }
   
-  export default About;
+  export default Blog;

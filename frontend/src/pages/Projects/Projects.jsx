@@ -1,10 +1,13 @@
+import UnderConstruction from "../../components/pages/under-construction";
 function Projects() {
     let Component; // create custom component
   
     // render page based on component
 
     return (
-        <div>Projects Under Construction</div>
+        <>
+            <UnderConstruction pageTitle="Projects"/>
+        </>
     );
   }
   
