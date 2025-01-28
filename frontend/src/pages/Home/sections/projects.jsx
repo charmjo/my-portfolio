@@ -3,7 +3,7 @@ import Carousel from "../../../components/ui/carousel";
 
 function Projects () {
     return (
-        <section className="2xl:mx-auto py-3 px-5 lg:h-screen">
+        <section className="2xl:mx-auto my-3 px-5">
             <div className="text-center">
                 <h2 className="text-5xl font-bold sm:text-8xl mt-24">
                     Project Highlights

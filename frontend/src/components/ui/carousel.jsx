@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import * as viewSize from '../../constants';
-import projectList from '../../data/projects.json';
+import projectList from '../../data/projects';
 import ProjectCard from "./projectCard";
 import arrowLeft from "../../assets/reshot-icon-arrow-left.svg";
 import arrowRight from "../../assets/reshot-icon-arrow-right.svg";
