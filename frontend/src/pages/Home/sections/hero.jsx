@@ -1,4 +1,4 @@
-
+import cherryBlossom from "../../../assets/img/design/cherry_blossom2.png";
 
 function Hero () {
     return (      
@@ -44,7 +44,7 @@ function Hero () {
         </div>  
 
         <div class="max-w-3xl h-full overflow-hidden ml-auto w-2/5">
-          <img src="assets/img/cherry_blossom2.png" alt="Description" class="scale-125 w-full h-full object-left-top object-cover"/>
+          <img src={cherryBlossom} alt="Description" class="scale-125 w-full h-full object-left-top object-cover"/>
         </div>      
       </div>
       
