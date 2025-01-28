@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.ec536cb4.css",
+    "main.js": "/my-portfolio/static/js/main.768379c8.js",
+    "static/js/453.8ab44547.chunk.js": "/my-portfolio/static/js/453.8ab44547.chunk.js",
+    "static/media/Montserrat-ExtraBoldItalic.ttf": "/my-portfolio/static/media/Montserrat-ExtraBoldItalic.c911063d57302cdc26da.ttf",
+    "static/media/Montserrat-BlackItalic.ttf": "/my-portfolio/static/media/Montserrat-BlackItalic.8df6912ba2ab8c598cb3.ttf",
+    "static/media/Montserrat-ExtraBold.ttf": "/my-portfolio/static/media/Montserrat-ExtraBold.757982f4c71159f6bdc2.ttf",
+    "static/media/Montserrat-Black.ttf": "/my-portfolio/static/media/Montserrat-Black.1984e065d55352d2a119.ttf",
+    "static/media/Montserrat-BoldItalic.ttf": "/my-portfolio/static/media/Montserrat-BoldItalic.e0380344c20e8011c133.ttf",
+    "static/media/Montserrat-SemiBoldItalic.ttf": "/my-portfolio/static/media/Montserrat-SemiBoldItalic.5d698d6f1d5be053be74.ttf",
+    "static/media/Montserrat-Italic.ttf": "/my-portfolio/static/media/Montserrat-Italic.c12cc8e898b7a5d2d4c1.ttf",
+    "static/media/Montserrat-MediumItalic.ttf": "/my-portfolio/static/media/Montserrat-MediumItalic.e3df6dbac4a6957bd332.ttf",
+    "static/media/Montserrat-Bold.ttf": "/my-portfolio/static/media/Montserrat-Bold.3530bfc1b50b41bdc29d.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/my-portfolio/static/media/Montserrat-SemiBold.38e62f01be69b2e02e29.ttf",
+    "static/media/Montserrat-Regular.ttf": "/my-portfolio/static/media/Montserrat-Regular.cfbf0da06d33097e6d0a.ttf",
+    "static/media/Montserrat-Medium.ttf": "/my-portfolio/static/media/Montserrat-Medium.d3f3d769c2fc1af5c0b4.ttf",
+    "static/media/construction.svg": "/my-portfolio/static/media/construction.3d8d61e09f36b30d811ca87fb2d2d2ac.svg",
+    "static/media/Sacramento-Regular.ttf": "/my-portfolio/static/media/Sacramento-Regular.5bd7d5208f7a9c18fe22.ttf",
+    "static/media/pbi-data-analyst.png": "/my-portfolio/static/media/pbi-data-analyst.f194071fae2889ef2c5f.png",
+    "static/media/azure-data-fundamentals-600x600.png": "/my-portfolio/static/media/azure-data-fundamentals-600x600.f6bc4fa1f70c5fcbd12e.png",
+    "static/media/github-mark-green.svg": "/my-portfolio/static/media/github-mark-green.9c40a299703c1721a933aca82cce1805.svg",
+    "index.html": "/my-portfolio/index.html",
+    "static/media/reshot-icon-arrow-left.svg": "/my-portfolio/static/media/reshot-icon-arrow-left.26d8d18d1ecb4019108c06e659c43d9b.svg",
+    "static/media/reshot-icon-arrow-right.svg": "/my-portfolio/static/media/reshot-icon-arrow-right.7c8118cf72f04e113104f84bfda154fd.svg",
+    "main.ec536cb4.css.map": "/my-portfolio/static/css/main.ec536cb4.css.map",
+    "main.768379c8.js.map": "/my-portfolio/static/js/main.768379c8.js.map",
+    "453.8ab44547.chunk.js.map": "/my-portfolio/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec536cb4.css",
+    "static/js/main.768379c8.js"
+  ]
+}
