@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sacramento: ["Sacramento","cursive"],
+      sans: ['Montserrat', 'sans-serif'], 
     },
     extend: {
       colors: {

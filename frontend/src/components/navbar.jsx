@@ -4,16 +4,28 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 // TODO: Make the navbar responsive
 function Navbar () {
     return (
-        <nav className="text-maroon-oak-900 text-xl bg-gradient-to-r from-waiouru-50 via-aqua-haze-200 to-waiouru-50 flex justify-between items-stretch gap-8 px-20">
-            <Link to="/" className="h-full font-sacramento font-medium text-4xl flex items-center p-1 mt-2">charm relator</Link>
-            <ul className="flex gap-4 items-center">
+        <nav className="bg-azalea-50 bg-opacity-75 sticky top-0 z-50 text-maroon-oak-900 text-3xl flex justify-between items-stretch gap-8 px-20">
+            <Link to="/" className="font-sacramento font-medium text-7xl flex items-center p-1 mt-3">CharmRelator</Link>
+            <ul className="flex gap-4 items-center py-3">
                 <CustomLink to="/">Home</CustomLink>
+                <div class=" bg-maroon-oak-900 h-4/5 w-[1.5px] mx-5"></div>
                 <CustomLink to="/about">About</CustomLink>
+                <div class=" bg-maroon-oak-900 h-4/5 w-[1.5px] mx-5"></div>
                 <CustomLink to="/projects">Projects</CustomLink>
-
+                <div class=" bg-maroon-oak-900 h-4/5 w-[1.5px] mx-5"></div>
                    {/* hover:bg-azalea-200 TODO: this is for the Blog link:  */}
                 <CustomLink to="/blog">Blog</CustomLink>
             </ul>
+
+            <a 
+                href="https://drive.google.com/file/d/1gI_bdPasrLg0XJ41wP1O8ttp_sfr2wCh/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                <button class="btn bg-maroon-oak-700 hover:bg-maroon-oak-300 text-white font-semi-bold m-3 py-3 px-8 rounded-xl shadow-sm">
+                    Resume
+                </button>
+            </a>
         </nav>
     );
     
@@ -27,8 +39,8 @@ function CustomLink ({to, children, ...props}) {
 
 
     return (
-        <li className={`px-2 py-1 hover:border-b-2 border-aqua-haze-700 ${isActive ? "border-b-2 text-aqua-haze-700" : ""}`}>
-            <Link className="hover:text-aqua-haze-700" to={to} {...props}>
+        <li className={`px-2 py-1 hover:border-b-2 hover:font-semibold border-maroon-oak-900 ${isActive ? "border-b-2 font-semibold" : ""}`}>
+            <Link className="" to={to} {...props}>
                 {children}
             </Link>
         </li>

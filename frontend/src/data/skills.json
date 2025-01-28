@@ -1,32 +1,99 @@
 [
     {
-        "id":1,
-        "name": "PHP",
-        "image": ""
+        "type":"Languages",
+        "list":[
+            {
+                "id":1,
+                "name": "PHP",
+                "image-link": ""
+            },
+            {
+                "id":2,
+                "name": "Laravel",
+                "image-link": ""
+            },
+            {
+                "id":3,
+                "name": "Javascript",
+                "image-link": ""
+            },
+
+            {
+                "id":4,
+                "name": "Swift",
+                "image-link": ""
+            },
+            {
+                "id":5,
+                "name": "C#",
+                "image-link": ""
+            },
+            {
+                "id":6,
+                "name": "Python",
+                "image-link": ""
+            }
+        ]
     },
     {
-        "id":2,
-        "name": "Laravel",
-        "image": ""
+        "type":"Libraries",
+        "list":[
+            {
+                "id":1,
+                "name": "React",
+                "image-link": ""
+            },
+            {
+                "id":2,
+                "name": "Bootstrap",
+                "image-link": ""
+            }
+        ]
     },
     {
-        "id":3,
-        "name": "Javascript",
-        "image": ""
+        "type":"Framework",
+        "list":[
+            {
+                "id":1,
+                "name": "Laravel",
+                "image-link": ""
+            },
+            {
+                "id":2,
+                "name": ".NET",
+                "image-link": ""
+            },
+            {
+                "id":3,
+                "name": "Express",
+                "image-link": ""
+            }
+        ]
     },
     {
-        "id":4,
-        "name": "React",
-        "image": ""
-    },
-    {
-        "id":5,
-        "name": "Swift",
-        "image": ""
-    },
-    {
-        "id":6,
-        "name": "C#",
-        "image": ""
+        "type":"Databases",
+        "list":[
+            {
+                "id":1,
+                "name": "MySQL",
+                "image-link": ""
+            },
+            {
+                "id":2,
+                "name": "Microsoft SQL Server",
+                "image-link": ""
+            },
+            {
+                "id":3,
+                "name": "PostgreSQL",
+                "image-link": ""
+            },
+            {
+                "id":4,
+                "name": "Firebase",
+                "image-link": ""
+            }
+        ]
     }
+
 ]
