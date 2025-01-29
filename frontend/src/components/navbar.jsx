@@ -4,7 +4,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 // TODO: Make the navbar responsive
 function Navbar () {
     return (
-        <nav className="bg-azalea-50 bg-opacity-75 sticky top-0 z-50 text-maroon-oak-900 text-3xl flex justify-between items-stretch gap-8 px-20">
+        <nav className="hidden md:flex bg-azalea-50 bg-opacity-75 sticky top-0 z-50 text-maroon-oak-900 text-3xl justify-between items-stretch gap-8 px-20">
             <Link to="/" className="font-sacramento font-medium text-7xl flex items-center p-1 mt-3">CharmRelator</Link>
             <ul className="flex gap-4 items-center py-3">
                 <CustomLink to="/">Home</CustomLink>
