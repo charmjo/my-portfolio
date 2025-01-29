@@ -22,17 +22,19 @@ function Hero () {
             </h1>
           </div>
 
-          <p className="mt-4 max-w-3xl sm:text-4xl/tight mb-5">
-            I am a <span className="text-maroon-oak-700 sm:text-5xl/tight">software engineer</span> who likes to build <span className="text-aqua-haze-600 sm:text-5xl/tight">solutions</span> around <span className="text-aqua-haze-600 sm:text-5xl/none">data</span>.
+          <p className="mt-4 text-xl max-w-3xl sm:text-4xl/tight mb-5">
+            I am a <span className="text-maroon-oak-700 text-2xl sm:text-5xl/tight">software engineer</span> who likes to build <span className="text-aqua-haze-600 text-2xl sm:text-5xl/tight">solutions</span> around <span className="text-aqua-haze-600 text-2xl sm:text-5xl/none">data</span>.
           </p>
 
           <div className="gap-4 flex flex-wrap sm:mt-11 sm:gap-12 text-center">
-            <button
-              href="#"
+            <a
+              href="https://drive.google.com/file/d/1gI_bdPasrLg0XJ41wP1O8ttp_sfr2wCh/view?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="block w-full rounded bg-maroon-oak-700 px-12 py-3 text-2xl font-medium text-white shadow hover:bg-maroon-oak-800 focus:outline-none focus:ring active:bg-maroon-oak-800 sm:w-auto"
             >
               Resume
-            </button>
+            </a>
 
             <button
               href="#"
